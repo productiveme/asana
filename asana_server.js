@@ -25,7 +25,7 @@ Oauth.registerService('asana', 2, null, function(query) {
     serviceData: serviceData,
     options: {profile: {name: identity.name}}
   };
-  
+
 });
 
 // returns an object containing:
@@ -60,5 +60,6 @@ var getTokens = function (query) {
       expiresIn: response.data.expires_in,
       identity: response.data.data
     };
-}
+  }
+};
 
