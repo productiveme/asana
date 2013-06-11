@@ -1,4 +1,4 @@
-meteor-asana
+asana
 ============
 
-Asana OAuth flow
+Asana OAuth flow for Meteor
