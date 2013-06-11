@@ -50,7 +50,7 @@ Oauth.registerService('asana', 2, null, function(query) {
     	throw new Error("Failed to complete OAuth handshake with Asana. " + err.message);
     }
 
-    if (response.data.error) // if the http response was a json object with an error attribute
+    if (response.data.error) { // if the http response was a json object with an error attribute
       throw new Error("Failed to complete OAuth handshake with Asana. " + response.data.error);
   	} else {
 	    return {
