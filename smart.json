@@ -1,0 +1,8 @@
+{
+  "name": "asana",
+  "description": "Asana connect flow and asana-api wrapper",
+  "homepage": "https://github.com/ProductiveMe/asana",
+  "author": "Jaco Swarts <jaco@productive.me>",
+  "version": "0.1.2",
+  "git": "https://github.com/productiveme/asana.git"
+}
