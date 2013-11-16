@@ -27,5 +27,5 @@ Asana.requestCredential = function (options, credentialRequestCompleteCallback) 
         '&redirect_uri=' + Meteor.absoluteUrl('_oauth/asana?close') +
         '&state=' + credentialToken;
 
-  Accounts.oauth.initiateLogin(credentialToken, loginUrl, credentialRequestCompleteCallback);
+  Oauth.initiateLogin(credentialToken, loginUrl, credentialRequestCompleteCallback);
 };
