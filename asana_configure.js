@@ -4,7 +4,7 @@ Template.configureLoginServiceDialogForAsana.siteUrl = function () {
 
 Template.configureLoginServiceDialogForAsana.fields = function () {
   return [
-    {property: 'clientId', label: 'Client ID'},
+    {property: 'appId', label: 'Client ID'},
     {property: 'secret', label: 'Client secret'}
   ];
 };
