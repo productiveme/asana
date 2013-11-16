@@ -16,6 +16,7 @@ Package.on_use(function(api) {
     'client');
 
   api.add_files("asana-api.js", "server");
+  if(api.export) api.export('asana');
 
   api.add_files('asana_common.js', ['client', 'server']);
   api.add_files('asana_server.js', 'server');
