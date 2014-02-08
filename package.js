@@ -10,7 +10,6 @@ Npm.depends( {
 } );
 
 Package.on_use(function(api) {
-  api.use('accounts-base', ['client', 'server']);
   api.use('oauth2', ['client', 'server']);
   api.use('oauth', ['client', 'server']);
   api.use('http', ['server']);
