@@ -6,10 +6,11 @@ Package.describe({
 });
 
 Npm.depends( { 
-  "asana-api" : "0.2.0" 
+  "asana-api" : "0.2.0"
 } );
 
 Package.on_use(function(api) {
+  api.use('accounts-base', ['client', 'server']);
   api.use('oauth2', ['client', 'server']);
   api.use('oauth', ['client', 'server']);
   api.use('http', ['server']);

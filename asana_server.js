@@ -1,6 +1,6 @@
 Asana.whitelistedFields = ['name','email','workspaces'];
 
-Oauth.registerService('asana', 2, null, function(query) {
+Accounts.oauth.registerService('asana', 2, null, function(query) {
 
   var response = getTokens(query);
   var accessToken = response.accessToken;
