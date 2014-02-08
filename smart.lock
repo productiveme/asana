@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "asana": {
+        "path": "."
+      }
+    },
+    "packages": {
+      "asana": {
+        "path": "."
+      }
+    }
+  }
+}
