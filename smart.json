@@ -3,6 +3,6 @@
   "description": "Asana connect flow and asana-api wrapper",
   "homepage": "https://github.com/productiveme/asana",
   "author": "Jaco Swarts <jaco@productive.me>",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "git": "https://github.com/productiveme/asana.git"
 }
