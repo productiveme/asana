@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends( {
-  "asana-api" : "0.2.0"
+  "asana-api-oauth" : "0.2.1"
 } );
 
 Package.on_use(function(api) {
