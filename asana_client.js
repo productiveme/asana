@@ -20,12 +20,21 @@ Asana.requestCredential = function (options, credentialRequestCompleteCallback) 
 
   var credentialToken = Random.id();
 
+  var loginStyle = OAuth._loginStyle('asana', config, options);
+
   var loginUrl =
         'https://app.asana.com/-/oauth_authorize' +
         '?response_type=code' +
         '&client_id=' + config.clientId +
-        '&redirect_uri=' + Meteor.absoluteUrl('_oauth/asana?close') +
-        '&state=' + credentialToken;
+        '&redirect_uri=' + OAuth._redirectUri('asana', config) +
+        '&state=' + OAuth._stateParam(loginStyle, credentialToken);
 
-  Oauth.initiateLogin(credentialToken, loginUrl, credentialRequestCompleteCallback);
+  OAuth.launchLogin({
+     loginService: "asana",
+     loginStyle: loginStyle,
+     loginUrl: loginUrl,
+     credentialRequestCompleteCallback: credentialRequestCompleteCallback,
+     credentialToken: credentialToken,
+     popupOptons: {width: 900, height: 450}
+   });
 };

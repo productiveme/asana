@@ -46,7 +46,7 @@ var getTokens = function (query) {
         code: query.code,
         client_id: config.clientId,
         client_secret: config.secret,
-        redirect_uri: Meteor.absoluteUrl("_oauth/asana?close"),
+        redirect_uri: OAuth._redirectUri('asana', config), //Meteor.absoluteUrl("_oauth/asana?close"),
         grant_type: 'authorization_code'
       }});
   } catch (err) {
