@@ -1,6 +1,6 @@
 Package.describe({
   name: 'productiveme:asana',
-  version: '1.0.3',
+  version: '1.0.4',
   // Brief, one-line summary of the package.
   summary: 'Asana OAuth flow and client implementation of the Asana API',
   // URL to the Git repository containing the source code for this package.
@@ -11,7 +11,7 @@ Package.describe({
 });
 
 Npm.depends( {
-  "asana-api" : "1.0.0"
+  "asana-api-oauth" : "1.0.1"
 } );
 
 Package.onUse(function(api) {
