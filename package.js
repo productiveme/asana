@@ -1,6 +1,6 @@
 Package.describe({
   name: 'productiveme:asana',
-  version: '1.0.4',
+  version: '1.0.5',
   // Brief, one-line summary of the package.
   summary: 'Asana OAuth flow and client implementation of the Asana API',
   // URL to the Git repository containing the source code for this package.
