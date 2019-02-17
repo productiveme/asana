@@ -1,5 +1,3 @@
-import { HTTP } from "meteor/http";
- 
 var Oauth = Package.oauth.Oauth;
 
 Asana.whitelistedFields = ['name','email','workspaces'];
