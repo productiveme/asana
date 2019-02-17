@@ -1,3 +1,5 @@
+import { HTTP } from "meteor/http";
+ 
 var Oauth = Package.oauth.Oauth;
 
 Asana.whitelistedFields = ['name','email','workspaces'];
@@ -41,7 +43,7 @@ var getTokens = function (query) {
 
   var response;
   try {
-    response = Meteor.http.post(
+    response = HTTP.post(
       "https://app.asana.com/-/oauth_token", {params: {
         code: query.code,
         client_id: config.clientId,
