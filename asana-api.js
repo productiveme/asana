@@ -1,1 +1,1 @@
-Asana = Npm.require("asana-api-oauth");
+Asana = Npm.require("asana");
