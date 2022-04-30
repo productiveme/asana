@@ -1,6 +1,6 @@
 Package.describe({
   name: 'productiveme:asana',
-  version: '1.1.1',
+  version: '1.2.0',
   summary: 'Asana OAuth flow and client implementation of the Asana API',
   git: 'https://github.com/productiveme/asana.git',
   documentation: null
