@@ -1,17 +1,13 @@
 Package.describe({
   name: 'productiveme:asana',
   version: '1.1.1',
-  // Brief, one-line summary of the package.
   summary: 'Asana OAuth flow and client implementation of the Asana API',
-  // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/productiveme/asana.git',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
   documentation: null
 });
 
 Npm.depends( {
-  "asana-api-oauth" : "1.1.1"
+  "asana" : "0.18.6"
 } );
 
 Package.onUse(function(api) {
