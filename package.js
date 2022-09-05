@@ -1,17 +1,17 @@
 Package.describe({
   name: 'productiveme:asana',
-  version: '1.2.0',
+  version: '1.3.0',
   summary: 'Asana OAuth flow and client implementation of the Asana API',
   git: 'https://github.com/productiveme/asana.git',
   documentation: null
 });
 
 Npm.depends( {
-  "asana" : "0.18.6"
+  "asana" : "1.0.0"
 } );
 
 Package.onUse(function(api) {
-  api.versionsFrom(['1.0','2.3']);
+  api.versionsFrom(['1.0','2.3','2.7']);
   api.use('oauth2', ['client', 'server']);
   api.use('oauth', ['client', 'server']);
   api.use('http', ['server']);
